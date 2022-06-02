@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <unistd.h>
 /**
  * main - Function to print text using putchar
  * Return: 1
