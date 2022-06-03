@@ -7,15 +7,15 @@
 
 int main(void)
 {
-	int index,i;
+	int index, i;
 
 	for (index = 0; index <= 15; index++)
 	{
-		if (index <10)
-			putchar(index%10+'0');
+		if (index < 10)
+			putchar(index % 10 + '0');
 		else
 		{
-			for (i='a'; i <= 'f'; i++)
+			for (i = 'a'; i <= 'f'; i++)
 				putchar(i);
 			break;
 		}
