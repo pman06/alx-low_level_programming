@@ -11,7 +11,7 @@ int main(void)
 
 	for (index = 0; index <= 9; index++)
 	{
-		fprintf(stdout, "%d", index);
+		putchar(index%10 + '0');
 	}
 	putchar('\n');
 	return (0);
