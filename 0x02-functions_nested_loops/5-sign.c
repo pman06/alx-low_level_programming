@@ -19,7 +19,7 @@ int print_sign(int n)
 		_putchar('0');
 		val = 0;
 	}
-	if (n < 0i)
+	if (n < 0)
 	{
 		_putchar('-');
 		val = -1;
