@@ -48,5 +48,4 @@ void jack_bauer(void)
 			break;
 		}
 	}
-	_putchar('\n');
 }
