@@ -3,7 +3,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * func - Function to return absolute values.
+ * main - Function to return absolute values.
  * Return:  of i
  */
 int main(void)
@@ -19,4 +19,5 @@ int main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
