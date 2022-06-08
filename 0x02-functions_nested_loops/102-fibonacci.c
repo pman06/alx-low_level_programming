@@ -10,14 +10,18 @@ int main(void)
 {
 	long int i, j, k, prev;
 
-	j = 0;
+	j = 1;
 	k = 1;
 
-	printf("0\n");
-	for (i = 1; i < 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		prev = k;
-		printf("%ld\n", k);
+		printf("%ld", k);
+		if (i != 49)
+		{
+			printf(", ");
+		}
+
 		k += j;
 		j = prev;
 	}
