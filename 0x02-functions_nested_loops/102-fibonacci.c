@@ -25,5 +25,6 @@ int main(void)
 		k += j;
 		j = prev;
 	}
+	printf("\n");
 	return (0);
 }
