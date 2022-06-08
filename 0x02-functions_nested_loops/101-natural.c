@@ -9,11 +9,12 @@
 int main(void)
 {
 	int d, sum;
+
 	sum = 0;
 
 	for (d = 0; d < 1024; d++)
 	{
-		if (d % 3 == 0 || d % 5== 0)
+		if (d % 3 == 0 || d % 5 == 0)
 		{
 			sum += d;
 		}
