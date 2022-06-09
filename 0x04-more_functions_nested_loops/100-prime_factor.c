@@ -3,28 +3,27 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_triangle - Function that prints # as triangle
- * @n: the number of times to print trianlge
- * Return:  void
+ * main - Function to return absolute values.
+ * Return:  of i
  */
-void print_triangle(int n)
+int main(void)
 {
-	int i, j, k;
+	int i;
 
-	if (n > 0)
+	for (i = 1; i <= 100; i++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			for (j = n - 1; j > i; j--)
-			{
-				_putchar(' ');
-			}
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+		if (i != 100)
+			printf(" ");
 
-			for (k = 0; k <= i; k++)
-				_putchar('#');
-			_putchar('\n');
-		}
 	}
-	else
-		_putchar('\n');
+	printf("\n");
+	return (0);
 }

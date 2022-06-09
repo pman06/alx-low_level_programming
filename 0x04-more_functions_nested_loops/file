@@ -9,7 +9,7 @@
  */
 void print_number(int i)
 {
-	int mod;
+	int mod; 
 
 	if (i < 0)
 	{
@@ -21,17 +21,15 @@ void print_number(int i)
 	else if (i >= 10)
 	{
 		_putchar(i / 10 +  '0');
-		_putchar(i % 10 + '0');
-	}
+		_putchar( i % 10 + '0');
 	else if (i >  99)
 	{
 		_putchar(i / 100 + '0');
 		mod = i % 100;
-		_putchar(mod / 10 + '0');
-		_putchar(mod % 10 + '0');
+		_putchar( mod / 10 + '0');
+		_putchar( mod % 10 + '0');
 	}
-	else
-		_putchar('0');
 
+		
 	printf("\n");
 }
