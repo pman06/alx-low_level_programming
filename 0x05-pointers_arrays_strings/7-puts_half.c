@@ -12,9 +12,19 @@ void puts_half(char *j)
 	int len = strlen(j);
 	int i;
 
-	for (i = (len / 2) ; i < len; i++)
+	if (len % 2 == 0)
 	{
-		printf("%c", j[i]);
+		for (i = (len / 2) ; i < len; i++)
+		{
+			printf("%c", j[i]);
+		}
+	}
+	else
+	{
+		for (i = (len / 2) + 1; i < len; i++)
+		{
+			printf("%c", j[i]);
+		}
 	}
 	printf("\n");
 
