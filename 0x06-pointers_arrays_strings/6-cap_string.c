@@ -20,16 +20,16 @@ char *cap_string(char *c)
 			if (i == 0)
 				c[i] = (char) (c[i] + ('A' - 'a'));
 			else if (c[i - 1] == ',' || c[i - 1] == ';')
-				 c[i] = (char)(c[i] + ('A' - 'a'));
+				c[i] = (char)(c[i] + ('A' - 'a'));
 			else if (c[i - 1] == '.' || c[i - 1] == '!')
 				c[i] = (char)(c[i] + ('A' - 'a'));
-			else if (c[i - 1] == '?' || c[i -1] == '\"')
+			else if (c[i - 1] == '?' || c[i - 1] == '\"')
 				c[i] = (char)(c[i] + ('A' - 'a'));
 			else if (c[i - 1] == '(' || c[i - 1] == ')')
 				c[i] = (char)(c[i] + ('A' - 'a'));
 			else if (c[i - 1] == '{' || c[i - 1] == '}')
 				c[i] = (char)(c[i] + ('A' - 'a'));
-			else if (c[i - 1] == ' ' || c[i - 1] == '\t')	
+			else if (c[i - 1] == ' ' || c[i - 1] == '\t')
 				c[i] = (char)(c[i] + ('A' - 'a'));
 			else if (c[i - 1] == '\n')
 				c[i] = (char)(c[i] + ('A' - 'a'));
