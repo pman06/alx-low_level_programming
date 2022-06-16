@@ -15,19 +15,24 @@ char *cap_string(char *c)
 
 	for (i = 0; i < len; i++)
 	{
-		int chk1 = isalpha(c[i]);
-		int chk2 = isalnum(c[i - 1]);
-
-		if ((i == 0 && chk1 > 0) || (chk1 > 0  && chk2 == 0))
+		if (c[i] >= 'a' && c[i] <= 'z')
 		{
-			if (c[i] >= 'a' && c[i] <= 'z')
-			{
+			if (i == 0)
+				c[i] = (char) (c[i] + ('A' - 'a'));
+			else if (c[i - 1] == ',' || c[i - 1] == ';')
+				 c[i] = (char)(c[i] + ('A' - 'a'));
+			else if (c[i - 1] == '.' || c[i - 1] == '!')
 				c[i] = (char)(c[i] + ('A' - 'a'));
-			}
-		}
-		else if (c[i] >= 'A' && c[i] <= 'Z')
-		{
-			c[i] = (char)(c[i] + ('a' - 'A'));
+			else if (c[i - 1] == '?' || c[i -1] == '\"')
+				c[i] = (char)(c[i] + ('A' - 'a'));
+			else if (c[i - 1] == '(' || c[i - 1] == ')')
+				c[i] = (char)(c[i] + ('A' - 'a'));
+			else if (c[i - 1] == '{' || c[i - 1] == '}')
+				c[i] = (char)(c[i] + ('A' - 'a'));
+			else if (c[i - 1] == ' ' || c[i - 1] == '\t')	
+				c[i] = (char)(c[i] + ('A' - 'a'));
+			else if (c[i - 1] == '\n')
+				c[i] = (char)(c[i] + ('A' - 'a'));
 		}
 	}
 	return (c);
