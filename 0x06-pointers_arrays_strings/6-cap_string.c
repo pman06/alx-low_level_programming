@@ -15,7 +15,10 @@ char *cap_string(char *c)
 
 	for (i = 0; i < len; i++)
 	{
-		if ((i == 0 && isalpha(c[i]) > 0) || (c[i] != ' ' && isalnum(c[i - 1]) == 0))
+		int chk1 = isalpha(c[i]);
+		int chk2 = isalnum(c[i - 1]);
+
+		if ((i == 0 && chk1 > 0) || (chk1 > 0  && chk2 == 0))
 		{
 			if (c[i] >= 'a' && c[i] <= 'z')
 			{
