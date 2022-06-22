@@ -3,6 +3,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * is_prime - Function to check prime number
+ * @n: prime variable
+ * @i: start integer
+ * Return:  of i
+ */
 int is_prime(int n, int i)
 {
 	if (n % i == 0)
@@ -11,9 +17,7 @@ int is_prime(int n, int i)
 	}
 	if (i <= n / 2)
 		is_prime(n, i + 1);
-	
 	return (1);
-
 }
 
 /**
@@ -28,10 +32,8 @@ int is_prime_number(int n)
 	start = 4;
 	if (n <= 1)
 		return (0);
-	if ( n == 2 || n == 3)
+	if (n == 2 || n == 3)
 		return (1);
 	else
-	{
 		return (is_prime(n, start));
-	}
 }
