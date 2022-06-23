@@ -10,7 +10,7 @@
  * @last: variable position last in string
  * Return:  of i
  */
-int true_palindrome(char *s, char first, char last)
+int true_palindrome(char *s, int first, int last)
 {
 	if (*(s + first) != *(s + last))
 		return (0);
@@ -29,7 +29,7 @@ int is_palindrome(char *s)
 {
 	int lenght = strlen(s) - 1;
 
-	if (lenght == 0)
+	if (lenght == 0 || lenght == 1)
 		return (1);
 	return (true_palindrome(s, 0, lenght));
 }
