@@ -19,7 +19,11 @@ char *create_array(unsigned int size, char c)
 	}
 
 	j = malloc(size * sizeof(char));
-
+	if (j == NULL)
+	{
+		fprintf(stderr, "Not enough memory left!\n");
+		return ('\0');
+	}
 	for (i = 0; i < size; i++)
 	{
 		*(j + i) = c;
