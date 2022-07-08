@@ -6,10 +6,10 @@
  * print_out- function to print out supplied string follwed by charaster
  * @str: string to print
  * @separator: the separater inbetween strings
- * @last: flag if the last item 
+ * @last: flag if the last item
  * Return: void
  */
-void print_out(char *str,const char *separator, int last)
+void print_out(char *str, const char *separator, int last)
 {
 	if (last == 0)
 	{
