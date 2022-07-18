@@ -8,13 +8,9 @@ size_t print_listint(const listint_t *h)
 {
 	int lenght = 0;
 
-	if (h == NULL)
-	{
-		return (0);
-	}
 	while (h)
 	{
-		printf("%d\n and %p", h->n, h->next);
+		printf("%d\n", h->n);
 		lenght++;
 		h = h->next;
 	}
