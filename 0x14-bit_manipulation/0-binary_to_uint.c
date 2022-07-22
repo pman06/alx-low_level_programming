@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_unint- Function add node to end of linked list
+ * binary_to_uint- Function add node to end of linked list
  * @b: the pointer binary to convert to unsigned int
  * Return:  unsigned int
  */
